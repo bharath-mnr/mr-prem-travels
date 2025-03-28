@@ -7,7 +7,7 @@ const VehicleTypes = () => {
   const vehicleTypes = [
     {
       type: 'Sedan',
-      image: '/sedan.png',
+      image: '/Sedan.png',
       rentalPlans: [
         {
           distance: 'Above 250 km (Per day)',
