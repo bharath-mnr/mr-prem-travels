@@ -7,7 +7,7 @@ const VehicleTypes = () => {
   const vehicleTypes = [
     {
       type: 'Sedan',
-      image: 'src/assets/sedan.png',
+      image: '/sedan.png',
       rentalPlans: [
         {
           distance: 'Above 250 km (Per day)',
@@ -26,7 +26,7 @@ const VehicleTypes = () => {
     },
     {
         type: 'SUV',
-        image: 'src/assets/Suv1.png',
+        image: '/Suv1.png',
         rentalPlans: [
           {
             distance: 'Above 250 km (Per day)',
@@ -45,7 +45,7 @@ const VehicleTypes = () => {
       },
       {
         type: 'Inova Crysta',
-        image: 'src/assets/Innova.PNG',
+        image: '/Innova.PNG',
         rentalPlans: [
           {
             distance: 'Above 250 km (Per day)',
@@ -64,7 +64,7 @@ const VehicleTypes = () => {
       },
       {
         type: 'Tempo',
-        image: 'src/assets/Tempo.PNG',
+        image: '/Tempo.PNG',
         rentalPlans: [
           {
             distance: 'Above 250 km (Per day)',
@@ -83,7 +83,7 @@ const VehicleTypes = () => {
       },
       {
         type: '18 Seater',
-        image: 'src/assets/18.png',
+        image: '/18.png',
         rentalPlans: [
           {
             distance: 'Above 250 km (Per day)',
@@ -102,7 +102,7 @@ const VehicleTypes = () => {
       },
       {
         type: '21 Seater',
-        image: 'src/assets/Bus.png',
+        image: '/Bus.png',
         rentalPlans: [
           {
             distance: 'Above 250 km (Per day)',

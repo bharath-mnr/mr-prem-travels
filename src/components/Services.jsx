@@ -14,14 +14,14 @@ const Services = () => {
       subtitle: 'Explore Local Destinations',
       description: 'Discover the hidden gems and iconic landmarks of our city with our expertly guided tours.',
       bgColor: '#0000fa',
-      videoSrc: 'src/assets/tour.mp4'
+      videoSrc: '/tour.mp4'
     },
     {
       title: 'Airport Transfers',
       subtitle: 'Reliable Transportation',
       description: 'Seamless and comfortable transfers to and from the airport, ensuring you never miss a flight.',
       bgColor: '#007bff',
-      videoSrc: 'src/assets/airport.mp4'
+      videoSrc: '/airport.mp4'
     },
     {
       title: 'Corporate Services',
@@ -35,7 +35,7 @@ const Services = () => {
       subtitle: 'Special Occasion Transport',
       description: 'Make your special day memorable with our luxurious and reliable event transportation.',
       bgColor: '#28a745',
-      videoSrc: 'src/assets/wedding.mp4'
+      videoSrc: '/wedding.mp4'
     }
   ];
 

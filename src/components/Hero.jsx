@@ -8,10 +8,10 @@ const Hero = () => {
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
   
   const imageCarousel = [
-    'src/assets/Car 1.png',
-    'src/assets/Car 2.png',
-    'src/assets/Car 3.png',
-    'src/assets/Car 4.png',
+    '/Car1.png',
+    '/Car2.png',
+    '/Car3.png',
+    '/Car4.png',
   ];
 
   useEffect(() => {
@@ -56,7 +56,7 @@ const Hero = () => {
           playsInline
           className="h-full w-full object-cover object-center filter brightness-50"
         >
-          <source src="src/assets/car vid.mp4" type="video/mp4" />
+          <source src="/car vid.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>

@@ -5,14 +5,14 @@ import "slick-carousel/slick/slick-theme.css";
 
 const SpecialRoutes = () => {
   const destinations = [
-    { name: "Madurai", image: "src/assets/Madurai.jpg" },
-    { name: "Rameswaram", image: "src/assets/Rameswaram.jpg" },
-    { name: "Munnar", image: "src/assets/Kerala.jpg" },
-    { name: "Kanyakumari", image: "src/assets/Kanyakumari.jpg" },
-    { name: "Thiruvananthapuram", image: "src/assets/Thiruvananthapuram.jpg" },
-    { name: "Kodaikkanal", image: "src/assets/Kodaikkanal.jpg" },
-    { name: "Varkala", image: "src/assets/Varkala.jpg" },
-    { name: "Thekkady ", image: "src/assets/Thekkady.jpg" }
+    { name: "Madurai", image: "/Madurai.jpg" },
+    { name: "Rameswaram", image: "/Rameswaram.jpg" },
+    { name: "Munnar", image: "/Kerala.jpg" },
+    { name: "Kanyakumari", image: "/Kanyakumari.jpg" },
+    { name: "Thiruvananthapuram", image: "/Thiruvananthapuram.jpg" },
+    { name: "Kodaikkanal", image: "/Kodaikkanal.jpg" },
+    { name: "Varkala", image: "/Varkala.jpg" },
+    { name: "Thekkady ", image: "/Thekkady.jpg" }
   ];
 
   const sliderSettings = {
