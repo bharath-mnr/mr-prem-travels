@@ -9,9 +9,9 @@ const Hero = () => {
   
   const imageCarousel = [
     '/Car1.png',
-    '/Car2.png',
-    '/Car3.png',
-    '/Car4.png',
+    '/car2.png',
+    '/car3.png',
+    '/car4.png',
   ];
 
   useEffect(() => {
