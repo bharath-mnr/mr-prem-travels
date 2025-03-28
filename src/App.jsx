@@ -18,10 +18,10 @@ const App = () => {
     <div className="app-container">
       <main>
         <Hero />
-        <WhyChooseUs />
         <Services />
         <SpecialRoutes />
         <VehicleTypes/>
+        <WhyChooseUs />
       </main>
       
       {/* Sticky/Footer Elements */}
