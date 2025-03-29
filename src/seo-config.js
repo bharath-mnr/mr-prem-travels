@@ -1,21 +1,42 @@
 // seo-config.js
 export const SEOConfig = {
-  siteName: "M.R. Prem Tour's Travels",
-  defaultTitle: "Madurai Taxi Service | 24/7 Cab Booking | Thirumangalam Transfers",
-  defaultDescription: "Reliable taxi services in Madurai and Thirumangalam. Professional AC/Non-AC cabs, airport transfers, outstation trips, and local transportation. Book now for comfortable and affordable travel!",
-  baseUrl: "https://www.mrpremtravels.com", // Updated domain (hypothetical)
+  siteName: "Mr Prem Travels",
+  defaultTitle: "Mr Prem Travels | Premier Taxi Services in Madurai",
+  defaultDescription: "24/7 Madurai taxi booking for airport transfers, outstation trips & local rides. AC/Non-AC cabs available. Reliable car rental service in Thirumangalam, Trichy & Tamil Nadu. Book now!",
+  baseUrl: "https://www.mrpremtravels.com",
   
   keywords: [
-    "Madurai taxi service",
-    "Thirumangalam taxi",
-    "Madurai cab booking",
-    "Outstation cabs Madurai",
-    "M.R. Prem Tours and Travels",
+    "madurai taxi",
+    "madurai taxi service",
+    "madurai taxi booking",
+    "thirumangalam taxi",
+    "car rental madurai",
+    "cab service madurai",
+    "airport taxi madurai",
+    "outstation cabs madurai",
+    "taxi in madurai",
+    "car hire madurai",
+    "rental car madurai",
+    "local taxi service",
     "24/7 taxi service",
-    "Car rental Madurai",
-    "Thirumangalam transportation",
-    "Local taxi service",
-    "Airport transfers Madurai"
+    "m.r. prem travels",
+    "taxi to coimbatore",
+    "chennai taxi service",
+    "trichy cab booking",
+    "taxi fare madurai",
+    "best taxi service madurai",
+    "taxi rates madurai",
+    "car rental with driver",
+    "one way taxi madurai",
+    "round trip taxi",
+    "madurai to theni taxi",
+    "madurai to dindigul taxi",
+    "cheap taxi service",
+    "luxury car rental madurai",
+    "tempo traveller hire",
+    "self drive cars madurai",
+    "group transportation",
+    "wedding car rental"
   ],
   
   businessInfo: {
@@ -24,7 +45,7 @@ export const SEOConfig = {
       street: "Thirumangalam",
       city: "Madurai",
       state: "Tamil Nadu",
-      postalCode: "625706", // Added a typical Thirumangalam postal code
+      postalCode: "625706",
       country: "India"
     },
     phone: "+919787614630",
@@ -40,7 +61,6 @@ export const SEOConfig = {
       "Chennai"
     ],
     socialProfiles: {
-      // Added placeholders - replace with actual social media links when available
       facebook: "#",
       instagram: "#",
       whatsApp: "+919787614630"
@@ -90,25 +110,26 @@ export const setMetaTags = (pageTitle = '', pageDescription = '') => {
     { name: 'keywords', content: SEOConfig.keywords.join(', ') },
     { property: 'og:title', content: title },
     { property: 'og:description', content: description },
-    { property: 'og:type', content: 'local business' },
+    { property: 'og:type', content: 'website' },
     { name: 'author', content: SEOConfig.businessInfo.name },
     { name: 'robots', content: 'index, follow' },
     { name: 'geo.region', content: 'IN-TN' },
-    { name: 'geo.placename', content: 'Madurai' }
+    { name: 'geo.placename', content: 'Madurai' },
+    { property: 'og:url', content: window.location.href },
+    { property: 'og:site_name', content: SEOConfig.siteName }
   ];
 
-  // Update or create meta tags
   metaTags.forEach(tag => {
-    let element = document.querySelector(`meta[${tag.name ? 'name' : 'property'}="${tag.name || tag.property}"]`);
+    const [attrType, attrValue] = tag.property ? ['property', tag.property] : ['name', tag.name];
+    let element = document.querySelector(`meta[${attrType}="${attrValue}"]`);
     
     if (!element) {
       element = document.createElement('meta');
       document.head.appendChild(element);
     }
     
-    Object.keys(tag).forEach(attr => {
-      element.setAttribute(attr === 'property' ? 'property' : 'name', tag[attr]);
-    });
+    element.setAttribute(attrType, attrValue);
+    element.setAttribute('content', tag.content);
   });
 };
 
